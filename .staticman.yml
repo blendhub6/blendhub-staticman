@@ -1,0 +1,11 @@
+comments:
+  allowedFields: ["name", "email", "message"]
+  branch: "master"
+  commitMessage: "New comment from {name}"
+  filename: "comment-{@timestamp}"
+  format: "json"
+  moderation: true
+  path: "_data/comments"
+  requiredFields: ["name", "email", "message"]
+  transforms:
+    email: md5
